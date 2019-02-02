@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P01 - Process</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/main.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>P01 - Newegg Canada</h1>
+
+            <div class="nav">
+                <a href="#"><img src="img/newegg_ca.jpeg" id="logo" alt="Newegg Canada"></a>
+                <nav class="main-nav">
+                    <a href="#" class="nav-button">Home</a>
+                    <a href="#" class="nav-button">Products</a>
+                    <a href="#" class="nav-button">About</a>
+                    <a href="#" class="nav-button">My Cart</a>
+                </nav>
+            </div>
+        </header>
+
+        <h2>Checkout</h2>
+
+        <div class="row">
+            <table class="cart flex">
+                <tr>
+                    <th class="cartHeading">Item</th>
+                    <th class="cartHeading">Quantity</th>
+                    <th class="cartHeading">Price</th>
+                </tr>
+
+                <tr>
+                    <td class="cartItem"><a href="#">Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA 6.0Gb/s 3.5" Hard Drive Bare Drive - OEM</a></td>
+                    <td class="cartQuantity">1</td>
+                    <td class="cartPrice">$49.99</td>
+                </tr>
+
+                <tr>
+                    <td class="cartItem"><a href="#">Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window</a></td>
+                    <td class="cartQuantity">1</td>
+                    <td class="cartPrice">$19.99</td>
+                </tr>
+
+                <tr>
+                    <td class="cartTotal">Total</td>
+                    <td class="cartQuantity">2</td>
+                    <td class="cartPrice">$99.98</td>
+                </tr>
+            </table>
+        </div>
+
+        <form class="form-payment">
+            <div class="form-row">
+                <div class="form-50 left">
+                    <h3>Billing Address</h3>
+
+                    <label for="input-name">Full Name:</label>
+                    <input type="text" name="input-name" id="input-name">
+
+                    <label for="input-email">Email:</label>
+                    <input type="text" name="input-email" id="input-email">
+
+                    <label for="input-address">Address:</label>
+                    <input type="text" name="input-address" id="input-address">
+
+                    <div class="form-row inner">
+                        <div class="form-50 left">
+                            <label for="input-city">City:</label>
+                            <input type="text" name="input-city" id="input-city">
+                        </div>
+
+                        <div class="form-50 right">
+                            <label for="input-state">State/Province</label>
+                            <input type="text" name="input-state" id="input-state">
+                        </div>
+                    </div>
+
+                    <div class="form-row inner">
+                        <div class="form-50 left">
+                            <label for="input-country">Country:</label>
+                            <input type="text" name="input-country" id="input-country">
+                        </div>
+
+                        <div class="form-50 right">
+                            <label for="input-postal">Postal Code:</label>
+                            <input type="text" name="input-postal" id="input-postal">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-50 right">
+                    <h3>Credit Card Info</h3>
+
+                    <label for="cc-type">Credit Card:</label>
+                    <select name="cc-type" id="cc-type">
+                        <option value="MC">Mastercard</option>
+                        <option value="V">Visa</option>
+                        <option value="AMEX">American Express</option>
+                        <option value="O">Other</option>
+                    </select>
+
+                    <label for="input-ccName">Card Holder's Name:</label>
+                    <input type="text" name="input-ccName" id="input-ccName">
+
+                    <label for="input-cc">Credit Card Number:</label>
+                    <input type="text" name="input-cc" id="input-cc">
+
+                    <label for="input-ccExp">Expiration Date:</label>
+                    <input type="text" name="input-ccExp" id="input-ccExp">
+
+                    <label for="input-cvv">CVV:</label>
+                    <input type="text" name="input-cvv" id="input-cvv">
+                </div>
+
+                <input class="nav-button form-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+</html>

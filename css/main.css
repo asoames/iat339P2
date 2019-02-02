@@ -1,0 +1,371 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2rem;
+}
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: #191970;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    margin-top: 4rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin-bottom: 0.25rem;
+}
+
+p {
+    margin-top: 0;
+    font-size: 0.875rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+code {
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    display: block;
+    font-size: 0.75rem;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.link {
+    font-weight: bold;
+    color: #0079ca;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.link:hover, .link:focus {
+    color: black;
+}
+
+/*
+Styling for the navigation button
+transition code from http://ianlunn.github.io/Hover/
+*/
+.nav-button {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    color: white;
+    background-color: #0079ca;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.nav-button:hover, .nav-button:focus {
+    opacity: 0.75;
+}
+
+#logo {
+    width: 15rem;
+    height: 8rem;
+    object-fit: cover
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+.main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    text-align: center;
+    padding-bottom: 0.3rem;
+    width: 50%
+}
+
+.main-nav a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav.style-guide *{
+    flex-grow: 1;
+    flex-basis: 21%;
+}
+
+.product-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product {
+    min-width: 200px;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 29%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-name {
+    color: #0079ca;
+    text-align: center;
+    margin: auto;
+}
+
+.product-image img{
+    max-height: 240px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.product-name:hover, .product-image:hover {
+    opacity: 0.75;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.product-price {
+    margin-top: auto;
+}
+
+.form-payment {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-row.inner {
+    padding: 0;
+}
+
+.form-50{
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.form-50.left{
+    padding-right: 1rem;
+}
+
+.form-50.right{
+    padding-left: 1rem;
+}
+
+.form-50 label[for^="input"], .form-50 label[for="cc-type"]{
+    display: block;
+    margin-bottom: 0.625rem;
+}
+
+.form-50 input[type="text"], .form-50 select {
+    margin-bottom: 1.25rem;
+    padding: 5px 6px;
+    width: 100%
+}
+
+.form-50 input[type="text"]:hover, .form-50 input[type="text"]:focus {
+    border-color: #191970;
+}
+
+.form-button {
+    width: 100%;
+}
+
+.cart {
+    margin: 1rem auto 0;
+}
+
+.cart td, .cart th {
+    padding: 0.5rem;
+}
+
+.cart th {
+    font-weight: bold;
+}
+
+.cart tr:first-child {
+    background-color: #191970;
+    color: white;
+}
+
+.cart tr:nth-child(odd):not(:first-child){
+    background-color: #F6F6F6;
+}
+
+.cart tr:nth-child(even){
+    background-color: white;
+}
+
+.cart a {
+    font-weight: bold;
+    color: #0079ca;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.cart a:hover, .cart a:focus {
+    color: black;
+}
+
+.cartQuantity, .cartPrice {
+    text-align: center;
+}
+
+.cart.flex{
+    margin: auto;
+    flex-basis: 75%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5rem 0.75rem;
+    align-content: center;
+    justify-content: center;
+}
+
+/*
+  OTHER ELEMENTS -------------------
+*/
+
+.sample-heading {
+    margin-top: 0.83rem;
+}
+
+.colour {
+    margin: 0;
+}
+
+.colour1 {
+    display: block;
+    background-color: #191970;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.colour2 {
+    display: block;
+    background-color: #0079ca;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.colour3 {
+    display: block;
+    background-color: #F6F6F6;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.images * {
+    margin: 10px;
+}
+
+.banner{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 47.5rem) {
+    .product {
+        flex-grow: 1;
+        flex-basis: 46%;
+    }
+}
+
+@media (max-width: 48.4375rem) {
+    .main-nav.style-guide *{
+        flex-basis: 29%;
+    }
+}
+
+@media (max-width: 40rem) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-50.left {
+        padding: 0;
+    }
+
+    .form-50.right {
+        padding: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav *{
+        flex-basis: 100%;
+    }
+}
