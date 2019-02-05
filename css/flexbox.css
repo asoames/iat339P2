@@ -1,36 +1,39 @@
 /*Validated*/
 
 .row {
-	 display: flex;
-     flex-flow: row wrap;
-     align-content: center;
-     justify-content: center;
-}
-
-.row.inner {
-     margin: 0 -1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0 -1rem;
 }
 
 .col-33 {
-     flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3);
 }
 
 .col-50 {
-     flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .col-66 {
-     flex-basis: calc(100% / 3 * 2);
+    flex-basis: calc(100% / 3 * 2);
 }
 
 .col-33, .col-50, .col-66 {
-     padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .popRight{
-     order: 2;
+    order: 1;
 }
 
-@media screen and (min-width: 1080px){
-	
+@media (max-width: 64rem){
+    .popRight{
+        order: -1;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }

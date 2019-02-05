@@ -176,6 +176,7 @@ transition code from http://ianlunn.github.io/Hover/
 
 .form-payment {
     background-color: #F6F6F6;
+    padding: 0 1rem;
 }
 
 .form-payment label[for^="input"], .form-payment label[for="cc-type"]{
@@ -198,7 +199,7 @@ transition code from http://ianlunn.github.io/Hover/
 }
 
 .cart {
-    margin: 1rem auto 0;
+    margin: 1rem auto;
 }
 
 .cart td, .cart th {
