@@ -176,48 +176,20 @@ transition code from http://ianlunn.github.io/Hover/
 
 .form-payment {
     background-color: #F6F6F6;
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
 }
 
-.form-row {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0.5rem 0.75rem;
-}
-
-.form-row.inner {
-    padding: 0;
-}
-
-.form-50{
-    flex-grow: 1;
-    flex-basis: 50%;
-}
-
-.form-50.left{
-    padding-right: 1rem;
-}
-
-.form-50.right{
-    padding-left: 1rem;
-}
-
-.form-50 label[for^="input"], .form-50 label[for="cc-type"]{
+.form-payment label[for^="input"], .form-payment label[for="cc-type"]{
     display: block;
     margin-bottom: 0.625rem;
 }
 
-.form-50 input[type="text"], .form-50 select {
+.form-payment input[type="text"], .form-payment select {
     margin-bottom: 1.25rem;
     padding: 5px 6px;
     width: 100%
 }
 
-.form-50 input[type="text"]:hover, .form-50 input[type="text"]:focus {
+.form-payment input[type="text"]:hover, .form-payment input[type="text"]:focus {
     border-color: #191970;
 }
 
@@ -263,19 +235,6 @@ transition code from http://ianlunn.github.io/Hover/
 
 .cartQuantity, .cartPrice {
     text-align: center;
-}
-
-.cart.flex{
-    margin: auto;
-    flex-basis: 75%;
-}
-
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0.5rem 0.75rem;
-    align-content: center;
-    justify-content: center;
 }
 
 /*
@@ -348,11 +307,11 @@ transition code from http://ianlunn.github.io/Hover/
         flex-direction: column;
     }
 
-    .form-50.left {
+    .form-payment.left {
         padding: 0;
     }
 
-    .form-50.right {
+    .form-payment.right {
         padding: 0;
     }
 
