@@ -1,0 +1,21 @@
+/*Validated*/
+
+.box{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-item{
+	flex: 1 1 auto;
+}
+
+@media screen and (min-width: 1080px){
+	.popRight{
+		order: 5;
+	}
+
+	.box-item{
+		max-width: 50%;
+	}
+}
+
