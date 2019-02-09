@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>P01 - Process</title>
+        <title>P02 - Company</title>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/main.css" rel="stylesheet">
@@ -16,10 +16,10 @@
     <body>
 
         <header>
-            <h1>P01 - Newegg Canada Style Guide</h1>
+            <h1>P02 - Newegg Canada Style Guide</h1>
 
             <div class="nav">
-                <a href="#"><img src="img/newegg_ca.jpeg" id="logo" alt="Newegg Canada"></a>
+                <a href="#"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
                 <nav class="main-nav style-guide">
                     <a href="#interactive_elements" class='nav-button'>Interactive Elements</a>
                     <a href="#text_elements" class='nav-button'>Text Elements</a>
@@ -113,7 +113,7 @@
 
 
             <section class="element">
-                <h3>Radio Button with Label</h3>
+                <h3>Drop-down List with Label</h3>
 
                 <h4>CSS selector:</h4>
                 <p>#option1</p>
@@ -123,23 +123,23 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;div class="radio-option"&gt;<br>
-                    &lt;input type="radio" name="input-radio" id="option1" value="1"&gt;<br>
-                    &lt;label for="option1"&gt;Option 1&lt;/label&gt;<br>
-                    &lt;/div&gt;<br><br>
-
-                    &lt;div class="radio-option"&gt;<br>
-                    &lt;input type="radio" name="input-radio" id="option2" value="2"&gt;<br>
-                    &lt;label for="option2"&gt;Option 2&lt;/label&gt;<br>
-                    &lt;/div&gt;
+                    &lt;label for="cc-type"&gt;Credit Card:&lt;/label&gt;<br>
+                    &lt;select name="cc-type" id="cc-type"&gt;<br>
+                    &lt;option value="MC"&gt;Mastercard&lt;/option&gt;<br>
+                    &lt;option value="V"&gt;Visa&lt;/option&gt;<br>
+                    &lt;option value="AMEX"&gt;American Express&lt;/option&gt;<br>
+                    &lt;option value="O"&gt;Other&lt;/option&gt;<br>
+                    &lt;/select&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <input type="radio" name="input-radio" id="option1" value="1">
-                <label for="option1">Option 1</label>
-
-                <input type="radio" name="input-radio" id="option2" value="2">
-                <label for="option2">Option 2</label>
+                <label for="cc-type">Credit Card:</label>
+                <select name="cc-type" id="cc-type">
+                    <option value="MC">Mastercard</option>
+                    <option value="V">Visa</option>
+                    <option value="AMEX">American Express</option>
+                    <option value="O">Other</option>
+                </select>
             </section>
 
 
@@ -151,11 +151,11 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;a href="#"&gt;&lt;img src="img/newegg_ca.jpeg" id="logo" alt="Newegg Canada"&gt;&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"&gt;&lt;/a&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <a href="https://www.newegg.ca/"><img src="img/newegg_ca.jpeg" id="logo" alt="Newegg Canada"></a>
+                <a href="https://www.newegg.ca/"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
             </section>
 
 
@@ -678,8 +678,14 @@
             <p>Similar to other other retailers and market places, I want the site to have a minimalist feel, focusing on the products themselves </p>
             <div class="images">
                 <img src="img/gaming-chair.jpg" class="banner" alt="Gamming Chair Banner">
-                <img src="img/Rosewill_FBM-X1.jpg" height="240" width="320" alt="Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window">
-                <img src="img/BarraCuda.jpg" height="240" width="320" alt="Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA">
+
+                <div class="product-image">
+                    <img src="img/Rosewill_FBM-X1.jpg" alt="Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window">
+                </div>
+
+                <div class="product-image">
+                    <img src="img/BarraCuda.jpg" alt="Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA">
+                </div>
             </div>
         </section>
 

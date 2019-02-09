@@ -97,7 +97,7 @@ transition code from http://ianlunn.github.io/Hover/
     opacity: 0.75;
 }
 
-#logo {
+.logo {
     width: 15rem;
     height: 8rem;
     object-fit: cover
