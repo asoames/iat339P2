@@ -10,15 +10,35 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/flexbox.css" rel="stylesheet">
+        <link href="css/hamburger.css" rel="stylesheet">
 
     </head>
 
     <body>
-
         <header>
-            <h1>P02 - Newegg Canada Style Guide</h1>
+            <div class = "hamHeader">
+                <h1>P02 - Newegg Canada Style Guide</h1>
+                <a href="#"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+            </div>
 
-            <div class="nav">
+            <div class="ham-toggle">
+                <div class="ham-toggle-bar"></div>
+            </div>
+            <nav class="ham">
+                <ul>
+                    <li><a href="#interactive_elements" class='nav-button'>Interactive Elements</a></li>
+                    <li><a href="#text_elements" class='nav-button'>Text Elements</a></li>
+                    <li><a href="#text_elements" class='nav-button'>Text Elements</a></li>
+                    <li><a href="product_listing.html" class='nav-button'>Product Listing Template</a></li>
+                    <li><a href="checkout.html" class='nav-button'>Checkout Template</a></li>
+                    <li><a href="#branding" class='nav-button'>Branding Ideas</a></li>
+                    <li><a href="#branding" class='nav-button'>Branding Ideas</a></li>
+                    <li><a href="#citations" class='nav-button'>Citations</a></li>
+                </ul>
+            </nav>
+            <script src="js/hamburger.js"></script>
+
+<!--             <div class="nav">
                 <a href="#"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
                 <nav class="main-nav style-guide">
                     <a href="#interactive_elements" class='nav-button'>Interactive Elements</a>
@@ -27,9 +47,9 @@
                     <a href="product_listing.html" class='nav-button'>Product Listing Template</a>
                     <a href="checkout.html" class='nav-button'>Checkout Template</a>
                     <a href="#branding" class='nav-button'>Branding Ideas</a>
-                    <a href="#identity" class='nav-button'>Brand Identity</a>
+                    <a href="#branding" class='nav-button'>Branding Ideas</a>
                     <a href="#citations" class='nav-button'>Citations</a>
-                </nav>
+                </nav> -->
             </div>
         </header>
 
