@@ -90,3 +90,22 @@ more easily organize the style for it*/
 .hamHeader{
   margin-left: 4.5rem;
 }
+
+@media screen and (min-width: 30em){
+  .ham{
+    display: none;
+  }
+  .hamHeader{
+    display: none;
+
+  }
+  .ham-toggle{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 30em){
+  .nav{
+    display: none;
+  }
+}
