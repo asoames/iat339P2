@@ -91,6 +91,10 @@ more easily organize the style for it*/
   margin-left: 4.5rem;
 }
 
+.ham-title{
+  text-align: center;
+}
+
 @media screen and (min-width: 30em){
   .ham{
     display: none;
@@ -106,6 +110,9 @@ more easily organize the style for it*/
 
 @media screen and (max-width: 30em){
   .nav{
+    display: none;
+  }
+  .nav-title{
     display: none;
   }
 }
