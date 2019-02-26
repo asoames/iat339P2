@@ -2,6 +2,7 @@
 
 .row {
     display: flex;
+    flex-grow: 1;
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
@@ -33,7 +34,14 @@
         order: -1;
     }
 
+    .row.checkout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 40rem) {
     .row {
         flex-direction: column;
+        align-content: stretch;
     }
 }

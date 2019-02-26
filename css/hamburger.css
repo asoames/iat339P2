@@ -1,81 +1,84 @@
-/*Added the hamburger as a diffrent css file to 
+/*Added the hamburger as a diffrent css file to
 more easily organize the style for it*/
 
 
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *:focus{
-  outline: none; 
+    outline: none;
 }
 
 .ham-toggle{
-  user-select: none;
-  cursor: pointer;
-  height: 2rem;
-  left: 2rem;
-  position: fixed;
-  top: 2rem;
-  width: 3.6rem;
-  z-index: 2; 
+    user-select: none;
+    cursor: pointer;
+    height: 2rem;
+    left: 2rem;
+    position: fixed;
+    top: 2rem;
+    width: 2.5rem;
+    z-index: 2;
 }
 
 .ham-toggle:hover{
-  opacity: 0.8; 
+    opacity: 0.8;
 }
 .ham-toggle .ham-toggle-bar,
 .ham-toggle .ham-toggle-bar::after,
 .ham-toggle .ham-toggle-bar::before{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.5s ease;
-  background: #191970;
-  content: '';
-  height: 0.4rem;
-  width: 100%; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    background: #191970;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
 }
 .ham-toggle .ham-toggle-bar{
-  margin-top: 0; 
+    margin-top: 0;
 }
 .ham-toggle .ham-toggle-bar::after{
-  margin-top: 0.8rem; 
+    margin-top: 0.8rem;
 
 }
 .ham-toggle .ham-toggle-bar::before{
-  margin-top: -0.8rem; 
+    margin-top: -0.8rem;
 }
 .ham-toggle.expanded .ham-toggle-bar{
-  background: transparent; 
+    background: transparent;
 }
 .ham-toggle.expanded .ham-toggle-bar::after, .ham-toggle.expanded .ham-toggle-bar::before{
-  background: #191970;
-  margin-top: 0; 
+    background: #191970;
+    margin-top: 0;
 }
 .ham-toggle.expanded .ham-toggle-bar::after{
-  transform: rotate(45deg); 
+    transform: rotate(45deg);
 }
 .ham-toggle.expanded .ham-toggle-bar::before{
-  transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+}
+
+.nav-button.ham-button{
+    width: 100%;
 }
 
 .ham{
-  transition: left 0.5s ease;
-  background: #F6F6F6;
-  color: white;
-  cursor: pointer;
-  font-size: 2rem;
-  height: 100vh;
-  left: -20rem;
-  padding: 6rem 2rem 2rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 20rem;
-  z-index: 1; 
+    transition: left 0.5s ease;
+    background: #F6F6F6;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100vh;
+    left: -20rem;
+    position: fixed;
+    top: 0;
+    width: 15rem;
+    z-index: 1;
 }
 .ham.expanded{
-  left: 0; 
+    left: 0;
 }
 
 .ham ul{
@@ -84,35 +87,40 @@ more easily organize the style for it*/
     transform: translateY(-50%);
     list-style: none;
     margin: 0;
-    padding: 0; 
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.ham a {
+    width: 100%;
 }
 
 .hamHeader{
-  margin-left: 4.5rem;
+    margin: 0 2rem;
 }
 
 .ham-title{
-  text-align: center;
+    text-align: center;
 }
 
-@media screen and (min-width: 30em){
-  .ham{
-    display: none;
-  }
-  .hamHeader{
-    display: none;
+@media screen and (min-width: 40em){
+    .ham{
+        display: none;
+    }
+    .hamHeader{
+        display: none;
 
-  }
-  .ham-toggle{
-    display: none;
-  }
+    }
+    .ham-toggle{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 30em){
-  .nav{
-    display: none;
-  }
-  .nav-title{
-    display: none;
-  }
+@media screen and (max-width: 40em){
+    .nav{
+        display: none;
+    }
+    .nav-title{
+        display: none;
+    }
 }

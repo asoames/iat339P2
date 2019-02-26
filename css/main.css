@@ -19,6 +19,10 @@ body {
     align-items: flex-end;
 }
 
+.nav.style-guide {
+    align-items: center;
+}
+
 .element {
     padding-bottom: 2rem;
     border-top-width: 0.15rem;
@@ -81,7 +85,7 @@ transition code from http://ianlunn.github.io/Hover/
 .nav-button, .info-block{
     display: inline-block;
     padding: 0.5rem;
-    margin: 0.3rem;
+    margin: 0.3rem 0 0.3rem 0.6rem;
     color: white;
     background-color: #0079ca;
     border-radius: 8px;
@@ -116,6 +120,7 @@ transition code from http://ianlunn.github.io/Hover/
 
 .main-nav, .info-display-main{
     display: flex;
+    flex-grow: 1;
     flex-flow: row wrap;
     align-items: stretch;
     text-align: center;
@@ -132,7 +137,6 @@ transition code from http://ianlunn.github.io/Hover/
 
 .main-nav.style-guide *, .info-display-main.style-guide *{
     flex-grow: 1;
-    flex-basis: 21%;
 }
 
 .product-list {
@@ -175,8 +179,15 @@ transition code from http://ianlunn.github.io/Hover/
 }
 
 .form-payment {
-    background-color: #F6F6F6;
     padding: 0 1rem;
+}
+
+.form-payment .col-50 {
+    background-color: #F6F6F6;
+}
+
+.form-payment .row > .col-50 {
+    margin-bottom: 1rem;
 }
 
 .form-payment label[for^="input"], .form-payment label[for="cc-type"]{
@@ -196,6 +207,7 @@ transition code from http://ianlunn.github.io/Hover/
 
 .form-button {
     width: 100%;
+    margin: 0;
 }
 
 .cart {
@@ -341,24 +353,19 @@ ul.contact-info{
     text-align: center;
 }
 
-@media (max-width: 47.5rem) {
-    .product {
-        flex-grow: 1;
-        flex-basis: 46%;
-    }
-}
-
 @media (max-width: 48.4375rem) {
     .main-nav.style-guide *, .info-display-main.style-guide *{
         flex-basis: 29%;
     }
 }
 
-@media (max-width: 40rem) {
-    .form-row {
-        flex-direction: column;
+@media (max-width: 47.5rem) {
+    .product {
+        flex-basis: 46%;
     }
+}
 
+@media (max-width: 40rem) {
     .form-payment.left {
         padding: 0;
     }
@@ -369,6 +376,12 @@ ul.contact-info{
 
     .nav {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        display: block;
+        margin: auto;
     }
 
     .main-nav, .info-display-main {
@@ -377,5 +390,16 @@ ul.contact-info{
 
     .main-nav *, .info-display-main *{
         flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 32.8125rem) {
+    .product {
+        flex-grow: 0;
+        flex-basis: 75%;
+    }
+
+    .product-list {
+        justify-content: center;
     }
 }
