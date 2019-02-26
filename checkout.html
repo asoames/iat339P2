@@ -10,12 +10,13 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/flexbox.css" rel="stylesheet">
+        <link href="css/hamburger.css" rel="stylesheet">
 
     </head>
 
     <body>
 
-        <header>
+       <!--  <header>
             <h1>Newegg Canada</h1>
 
             <div class="nav">
@@ -28,8 +29,42 @@
                 </nav>
             </div>
         </header>
+        
+        <h2>Checkout</h2> -->
+        <header>
+            <div class = "hamHeader">
+                <h1 class="ham-title">HOME</h1>
+                <a href="index.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+            </div>
 
-        <h2>Checkout</h2>
+            <div class="ham-toggle">
+                <div class="ham-toggle-bar"></div>
+            </div>
+            <nav class="ham">
+                <ul>
+                    <li><a href="home.html" class='nav-button'>Home</a></li>
+                    <li><a href="product_listing.html" class='nav-button'>Product Listing</a></li>
+                    <li><a href="detailedProduct.html" class='nav-button'>Detailed Product</a></li>
+                    <li><a href="checkout.html" class='nav-button'>Checkout</a></li>
+                    <li><a href="about.html" class='nav-button'>About Us</a></li>
+                    <li><a href="contact.html" class='nav-button'>Contact Us / Feedback</a></li>
+                </ul>
+            </nav>
+            <script src="js/hamburger.js"></script>
+
+            <div class="nav">
+                <a href="index.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+                <nav class="main-nav style-guide">
+                    <a href="home.html" class='nav-button'>Home</a>
+                    <a href="product_listing.html" class='nav-button'>Product Listing</a>
+                    <a href="detailedProduct.html" class='nav-button'>Detailed Product</a>
+                    <a href="checkout.html" class='nav-button'>Checkout</a>
+                    <a href="about.html" class='nav-button'>About Us</a>
+                    <a href="contact.html" class='nav-button'>Contact Us / Feedback</a>
+                </nav>
+            </div>
+            <h1 class="nav-title">HOME</h1>
+        </header>
 
         <div class="row">
             <div class="col-33 popRight">
