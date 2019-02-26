@@ -337,6 +337,10 @@ ul.contact-info{
     padding-left: 0;
 }
 
+.centre-title{
+    text-align: center;
+}
+
 @media (max-width: 47.5rem) {
     .product {
         flex-grow: 1;
