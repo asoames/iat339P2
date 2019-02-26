@@ -332,6 +332,11 @@ img.about{
     max-width: 98%;
 }
 
+ul.contact-info{
+    list-style-type: none;
+    padding-left: 0;
+}
+
 @media (max-width: 47.5rem) {
     .product {
         flex-grow: 1;

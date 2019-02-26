@@ -1,3 +1,5 @@
+<!--HTML Validated-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +57,7 @@
         <ul class="contact-info">
             <li class="contact-info">24/7 Support Number: 604-000-0000</li>
             <li class="contact-info"><a href="https://help.newegg.ca">24/7 Support Chat</a></li>
-            <li class="contact-info">Email Support: <a href="mailto:help@companyName.com<">help@companyName.com</a></li>
+            <li class="contact-info">Email Support: <a href="mailto:help@companyName.com">help@companyName.com</a></li>
             <li class="contact-info">Adress: 12345 67 ave</li>
             <li class="contact-info"><a href="https://twitter.com">Twitter</a></li>
             <li class="contact-info"><a href="https://www.facebook.com">Facebook</a></li>
@@ -63,23 +65,24 @@
     </section>
 
     <section id="feedback">
-        <h2>Feedback</h2>
-        <form name="feedback-form">
-            <ul class="userInfo">
-                <li>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" value="" placeholder="Jane Doe">
-                </li>
-                <li>
-                    <label for="name">email</label>
-                    <input type="text" id="name" value="" placeholder="name@domain.com">
-                </li>
-                <li>Feedback:<textarea rows="5" cols="50" class="feedback-box"></textarea></li>
-            </ul>
-            <button type="submit" value="Submit" name="payment" class="submit-button">Submit</button>
+         <form class="form-payment">
+            <div class="form-row">
+                <div class="form-50 left">
+                    <h2>Feedback</h2>
+
+                    <label for="input-name">Full Name:</label>
+                    <input type="text" name="input-name" id="input-name">
+
+                    <label for="input-email">Email:</label>
+                    <input type="text" name="input-email" id="input-email">
+
+                    <label>Feedback:</label>
+                    <textarea rows="5" cols="50" class="feedback-box"></textarea>
+                </div>
+                <button type="submit" value="Submit" name="payment" class="submit-button">Submit</button>
+            </div>
         </form>
     </section>
-
 
 
 
