@@ -290,6 +290,10 @@ transition code from http://ianlunn.github.io/Hover/
     object-fit: cover;
 }
 
+.feedback-box{
+    display: block;
+}
+
 @media (max-width: 47.5rem) {
     .product {
         flex-grow: 1;
