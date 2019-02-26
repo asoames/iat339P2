@@ -302,23 +302,20 @@ transition code from http://ianlunn.github.io/Hover/
     object-fit: cover;
 }
 
-.feedback-box{
-    display: block;
+#feedback-form {
+    display: flex;
+    flex-direction: column;
 }
 
-.submit-button{
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    color: white;
-    background-color: #00ca5a;  /*change colour*/
-    border-radius: 8px;
-    text-decoration: none;
-    border: none;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    font-size: 0.875rem;
-    font-weight: bold;
+.feedback-box{
+    display: block;
+    resize: none;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+#feedback-button{
+    flex-basis: 50.5%;
 }
 
 .submit-button:hover, .submit-button:focus{

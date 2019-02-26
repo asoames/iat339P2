@@ -29,6 +29,15 @@
     order: 1;
 }
 
+.left {
+    justify-content: flex-start;
+}
+
+.feedbackFlex {
+    display: block;
+    width: 315px;
+}
+
 @media (max-width: 64rem){
     .popRight{
         order: -1;
@@ -43,5 +52,11 @@
     .row {
         flex-direction: column;
         align-content: stretch;
+    }
+
+    .feedbackFlex {
+        display: flex;
+        width: 100%;
+        margin: 0;
     }
 }
