@@ -313,6 +313,20 @@ transition code from http://ianlunn.github.io/Hover/
     opacity: 0.75;
 }
 
+#events-banner{
+    padding: 1rem;
+    background-color: #0089ca91; /*change colour*/
+    color: white;
+    text-align: center;
+}
+
+p.events-banner{
+    margin-top: -1rem;
+}
+
+a.events-banner{
+    color: white;
+}
 
 @media (max-width: 47.5rem) {
     .product {
