@@ -328,6 +328,10 @@ a.events-banner{
     color: white;
 }
 
+img.about{
+    max-width: 98%;
+}
+
 @media (max-width: 47.5rem) {
     .product {
         flex-grow: 1;
