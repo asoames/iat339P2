@@ -1,9 +1,114 @@
+<!--
+    To Do
+    -Detailed product page
+    -Style guide
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+
         <meta charset="utf-8">
-        <meta http-equiv="refresh" content="0; URL='home.html'" />
-        <title>Redirect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P02 - Company</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        <link href="css/hamburger.css" rel="stylesheet">
+
     </head>
-    <body></body>
+
+    <body>
+        <header>
+            <div class="logo-frame">
+                <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+            </div>
+
+            <div class="toggle" id="menu-toggle">
+                <div class="toggle-bar"></div>
+            </div>
+
+            <nav class="main-nav" id="menu">
+                <a href="index.html" class='nav-button'>Home</a>
+                <a href="product_listing.html" class='nav-button'>Products</a>
+                <a href="checkout.html" class='nav-button'>Checkout</a>
+                <a href="about.html" class='nav-button'>About</a>
+                <a href="contact.html" class='nav-button'>Contact</a>
+            </nav>
+            <script src="js/hamburger.js"></script>
+
+            <h1 class="nav-title">Home</h1>
+        </header>
+
+        <section id="events-banner">
+            <h3>Winter Sale!</h2>
+                <p class="events-banner">January. 1 to February. 28</p>
+                <a href="detailedProduct.html" class="events-banner">Featured Product<br>Rosewill Dual-Fan ATX Mini Tower Computer Case - FBM-05</a>
+        </section>
+
+        <section id="content">
+            <h2 class="centre-title">Showcase - Cases, and CPUs!</h2>
+            <div class="product-list">
+
+                <div class="product">
+
+                    <a href=detailedProduct.html>
+                        <div class="product-image">
+                            <img src="img/AMD_RYZEN_5.jpg" alt="AMD RYZEN 5 2400G Quad-Core 3.6 GHz (3.9 GHz Turbo) Socket AM4 65W YD2400C5FBBOX Desktop Processor">
+                        </div>
+
+                        <div class="product-name">
+                            <h4>AMD RYZEN 5 2400G Quad-Core 3.6 GHz (3.9 GHz Turbo) Socket AM4 65W YD2400C5FBBOX Desktop Processor</h4>
+                        </div>
+                    </a>
+
+                    <div class="product-price">
+                        <h5>$49.99</h5>
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="img/Rosewill_FBM-X1.jpg" alt="Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window">
+                        </div>
+
+                        <div class="product-name">
+                            <h4>Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window</h4>
+                        </div>
+                    </a>
+
+                    <div class="product-price">
+                        <h5>$19.99</h5>
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="img/Rosewill_Dual-Fan.jpg" alt="Rosewill Dual-Fan ATX Mini Tower Computer Case - FBM-05">
+                        </div>
+
+                        <div class="product-name">
+                            <h4>Rosewill Dual-Fan ATX Mini Tower Computer Case - FBM-05</h4>
+                        </div>
+                    </a>
+
+                    <div class="product-price">
+                        <h5>$17.99</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </body>
+
 </html>

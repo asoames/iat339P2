@@ -9,6 +9,11 @@
     margin: 0 -1rem;
 }
 
+.row.checkout {
+    margin: auto;
+    max-width: 1200px;
+}
+
 .col-33 {
     flex-basis: calc(100% / 3);
 }

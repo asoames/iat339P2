@@ -17,7 +17,7 @@
     <body>
         <header>
             <div class="logo-frame">
-                <a href="index.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+                <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
             </div>
 
             <div class="toggle" id="menu-toggle">
@@ -29,10 +29,10 @@
                     <a href="#interactive_elements" class='nav-button'>Interactive Elements</a>
                     <a href="#text_elements" class='nav-button'>Text Elements</a>
                     <a href="#combined_elements" class='nav-button'>Combined Elements</a>
-                    <a href="product_listing.html" class='nav-button'>Product Listing Template</a>
+                    <a href="product_listing.html" class='nav-button'>Product List Template</a>
                     <a href="checkout.html" class='nav-button'>Checkout Template</a>
                     <a href="#branding" class='nav-button'>Branding Ideas</a>
-                    <a href="home.html" class='nav-button'>Home Page</a>
+                    <a href="index.html" class='nav-button'>Home Page</a>
                     <a href="#citations" class='nav-button'>Citations</a>
                 </nav>
             </div>
@@ -91,12 +91,12 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;input class="nav-button form-button" type="submit" value="Submit"<br>
+                    &lt;input class="nav-button" type="submit" value="Submit"&gt;<br>
                     &lt;input class="nav-button" type="reset" value="Reset"&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <input class="nav-button form-button" type="submit" value="Submit">
+                <input class="nav-button" type="submit" value="Submit">
                 <input class="nav-button" type="reset" value="Reset">
             </section>
 
@@ -131,28 +131,23 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;form class="form-payment"&gt;<br>
-                    ...<br>
-                        &lt;label for="cc-type"&gt;Credit Card:&lt;/label&gt;<br>
-                        &lt;select name="cc-type" id="cc-type"&gt;<br>
-                        &lt;option value="MC"&gt;Mastercard&lt;/option&gt;<br>
-                        &lt;option value="V"&gt;Visa&lt;/option&gt;<br>
-                        &lt;option value="AMEX"&gt;American Express&lt;/option&gt;<br>
-                        &lt;option value="O"&gt;Other&lt;/option&gt;<br>
-                        &lt;/select&gt;<br>
-                         &lt;/form&gt;
+                    &lt;label for="cc-type"&gt;Credit Card:&lt;/label&gt;<br>
+                    &lt;select name="cc-type" id="cc-type"&gt;<br>
+                    &lt;option value="MC"&gt;Mastercard&lt;/option&gt;<br>
+                    &lt;option value="V"&gt;Visa&lt;/option&gt;<br>
+                    &lt;option value="AMEX"&gt;American Express&lt;/option&gt;<br>
+                    &lt;option value="O"&gt;Other&lt;/option&gt;<br>
+                    &lt;/select&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <form class="form-payment">
-                    <label for="cc-type">Credit Card:</label>
-                    <select name="cc-type" id="cc-type">
-                        <option value="MC">Mastercard</option>
-                        <option value="V">Visa</option>
-                        <option value="AMEX">American Express</option>
-                        <option value="O">Other</option>
-                    </select>
-                </form>
+                <label for="cc-type">Credit Card:</label>
+                <select name="cc-type" id="cc-type">
+                    <option value="MC">Mastercard</option>
+                    <option value="V">Visa</option>
+                    <option value="AMEX">American Express</option>
+                    <option value="O">Other</option>
+                </select>
             </section>
 
 
@@ -192,14 +187,14 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;h1 class="nav-title"&gt;Heading 1&lt;/h1&gt;<br>
+                    &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
                     &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
                     &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
                     &lt;h4&gt;Heading 4&lt;/h4&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <h1 class="nav-title">Heading 1</h1>
+                <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
                 <h4>Heading 4</h4>
@@ -262,26 +257,42 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;div class="nav" id="menu"&gt;<br>
-                    &lt;nav class="main-nav"&gt;<br>
-                    &lt;a href="#" class="nav-button"&gt;Home&lt;/a&gt;<br>
-                    &lt;a href="#" class="nav-button"&gt;Products&lt;/a&gt;<br>
-                    &lt;a href="#" class="nav-button"&gt;About&lt;/a&gt;<br>
-                    &lt;a href="#" class="nav-button"&gt;My Cart&lt;/a&gt;<br>
-                    &lt;/nav&gt;<br>
-                    &lt;/div&gt;
+                    &lt;div class="logo-frame"&gt;<br>
+                    &lt;a href="index.html"&gt;&lt;img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"&gt;&lt;/a&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class="toggle" id="menu-toggle"&gt;<br>
+                    &lt;div class="toggle-bar"&gt;&lt;/div&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;nav class="main-nav" id="menu"&gt;<br>
+                    &lt;a href="home.html" class='nav-button'&gt;Home&lt;/a&gt;<br>
+                    &lt;a href="product_listing.html" class='nav-button'&gt;Products&lt;/a&gt;<br>
+                    &lt;a href="checkout.html" class='nav-button'&gt;Checkout&lt;/a&gt;<br>
+                    &lt;a href="about.html" class='nav-button'&gt;About&lt;/a&gt;<br>
+                    &lt;a href="contact.html" class='nav-button'&gt;Contact&lt;/a&gt;<br>
+                    &lt;/nav&gt;<br><br>
+
+                    &lt;script src="js/hamburgerSG.js"&gt;&lt;/script&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                <div class="nav" id="menu">
-                    <nav class="main-nav">
-                        <a href="home.html" class='nav-button'>Home</a>
-                        <a href="product_listing.html" class='nav-button'>Products</a>
-                        <a href="checkout.html" class='nav-button'>Checkout</a>
-                        <a href="about.html" class='nav-button'>About</a>
-                        <a href="contact.html" class='nav-button'>Contact</a>
-                    </nav>
+                <div class="toggle style-guide" id="menu-toggleSG">
+                    <div class="toggle-bar"></div>
                 </div>
+
+                <div class="logo-frame">
+                    <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+                </div>
+
+                <nav class="main-nav style-guide" id="menuSG">
+                    <a href="index.html" class='nav-button'>Home</a>
+                    <a href="product_listing.html" class='nav-button'>Products</a>
+                    <a href="checkout.html" class='nav-button'>Checkout</a>
+                    <a href="about.html" class='nav-button'>About</a>
+                    <a href="contact.html" class='nav-button'>Contact</a>
+                </nav>
+                <script src="js/hamburgerSG.js"></script>
             </section>
 
             <section class="element">
@@ -399,8 +410,7 @@
                 <h4>CSS selector:</h4>
                 <p>.form-payment</p>
                 <p>.form-row</p>
-                <p>.form-50.left</p>
-                <p>.form-50.right</p>
+                <p>.form-50</p>
                 <p>label[for="input-name"]</p>
                 <p>#input-name</p>
                 <p>label[for="input-email"]</p>
@@ -430,287 +440,287 @@
                 <h4>Sample code:</h4>
                 <code>
                     &lt;div class="row checkout"&gt;<br>
-                        &lt;div class="col-33 popRight"&gt;<br>
-                            &lt;table class="cart"&gt;<br>
-                                &lt;tr&gt;<br>
-                                    &lt;th class="cartHeading">Item&lt;/th&gt;<br>
-                                    &lt;th class="cartHeading">Quantity&lt;/th&gt;<br>
-                                    &lt;th class="cartHeading">Price&lt;/th&gt;<br>
-                                &lt;/tr&gt;<br>
+                    &lt;div class="col-33 popRight"&gt;<br>
+                    &lt;table class="cart"&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;th class="cartHeading">Item&lt;/th&gt;<br>
+                    &lt;th class="cartHeading">Quantity&lt;/th&gt;<br>
+                    &lt;th class="cartHeading">Price&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
 
-                                &lt;tr&gt;<br>
-                                    &lt;td class="cartItem"&gt;&lt;a href="#">Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA 6.0Gb/s 3.5" Hard Drive Bare Drive - OEM&lt;/a&gt;&lt;/td&gt;<br>
-                                    &lt;td class="cartQuantity">1&lt;/td&gt;<br>
-                                    &lt;td class="cartPrice">$49.99&lt;/td&gt;<br>
-                                &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td class="cartItem"&gt;&lt;a href="#">Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA 6.0Gb/s 3.5" Hard Drive Bare Drive - OEM&lt;/a&gt;&lt;/td&gt;<br>
+                    &lt;td class="cartQuantity">1&lt;/td&gt;<br>
+                    &lt;td class="cartPrice">$49.99&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
 
-                                &lt;tr&gt;<br>
-                                    &lt;td class="cartItem"&gt;&lt;a href="#">Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window&lt;/a&gt;&lt;/td&gt;<br>
-                                    &lt;td class="cartQuantity">1&lt;/td&gt;<br>
-                                    &lt;td class="cartPrice">$19.99&lt;/td&gt;<br>
-                                &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td class="cartItem"&gt;&lt;a href="#">Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window&lt;/a&gt;&lt;/td&gt;<br>
+                    &lt;td class="cartQuantity">1&lt;/td&gt;<br>
+                    &lt;td class="cartPrice">$19.99&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
 
-                                &lt;tr&gt;<br>
-                                    &lt;td class="cartTotal">Total&lt;/td&gt;<br>
-                                    &lt;td class="cartQuantity">2&lt;/td&gt;<br>
-                                    &lt;td class="cartPrice">$99.98&lt;/td&gt;<br>
-                                &lt;/tr&gt;<br>
-                            &lt;/table&gt;<br>
-                        &lt;/div&gt;<br>
-
-                        &lt;div class="col-66"&gt;<br>
-                            &lt;form class="form-payment"&gt;<br>
-                                &lt;div class="row"&gt;<br>
-                                    &lt;div class="col-50"&gt;<br>
-                                        &lt;h3>Billing Address&lt;/h3&gt;<br>
-
-                                        &lt;label for="input-name">Full Name:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-name" id="input-name"&gt;<br>
-
-                                        &lt;label for="input-email">Email:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-email" id="input-email"&gt;<br>
-
-                                        &lt;label for="input-address">Address:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-address" id="input-address"&gt;<br>
-
-                                        &lt;div class="row"&gt;<br>
-                                            &lt;div class="col-50"&gt;<br>
-                                                &lt;label for="input-city">City:&lt;/label&gt;<br>
-                                                &lt;input type="text" name="input-city" id="input-city"&gt;<br>
-                                            &lt;/div&gt;<br>
-
-                                            &lt;div class="col-50"&gt;<br>
-                                                &lt;label for="input-state">State/Province&lt;/label&gt;<br>
-                                                &lt;input type="text" name="input-state" id="input-state"&gt;<br>
-                                            &lt;/div&gt;<br>
-                                        &lt;/div&gt;<br>
-
-                                        &lt;div class="row"&gt;<br>
-                                            &lt;div class="col-50"&gt;<br>
-                                                &lt;label for="input-country">Country:&lt;/label&gt;<br>
-                                                &lt;input type="text" name="input-country" id="input-country"&gt;<br>
-                                            &lt;/div&gt;<br>
-
-                                            &lt;div class="col-50"&gt;<br>
-                                                &lt;label for="input-postal">Postal Code:&lt;/label&gt;<br>
-                                                &lt;input type="text" name="input-postal" id="input-postal"&gt;<br>
-                                            &lt;/div&gt;<br>
-                                        &lt;/div&gt;<br>
-                                    &lt;/div&gt;<br>
-
-                                    &lt;div class="col-50"&gt;<br>
-                                        &lt;h3>Credit Card Info&lt;/h3&gt;<br>
-
-                                        &lt;label for="cc-type">Credit Card:&lt;/label&gt;<br>
-                                        &lt;select name="cc-type" id="cc-type"&gt;<br>
-                                            &lt;option value="MC">Mastercard&lt;/option&gt;<br>
-                                            &lt;option value="V">Visa&lt;/option&gt;<br>
-                                            &lt;option value="AMEX">American Express&lt;/option&gt;<br>
-                                            &lt;option value="O">Other&lt;/option&gt;<br>
-                                        &lt;/select&gt;<br>
-
-                                        &lt;label for="input-ccName">Card Holder's Name:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-ccName" id="input-ccName"&gt;<br>
-
-                                        &lt;label for="input-cc">Credit Card Number:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-cc" id="input-cc"&gt;<br>
-
-                                        &lt;label for="input-ccExp">Expiration Date:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-ccExp" id="input-ccExp"&gt;<br>
-
-                                        &lt;label for="input-cvv">CVV:&lt;/label&gt;<br>
-                                        &lt;input type="text" name="input-cvv" id="input-cvv"&gt;<br>
-                                    &lt;/div&gt;<br>
-
-                                    &lt;input class="nav-button form-button" type="submit" value="Submit"&gt;<br>
-                                &lt;/div&gt;<br>
-                            &lt;/form&gt;<br>
-                        &lt;/div&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td class="cartTotal">Total&lt;/td&gt;<br>
+                    &lt;td class="cartQuantity">2&lt;/td&gt;<br>
+                    &lt;td class="cartPrice">$99.98&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/table&gt;<br>
                     &lt;/div&gt;<br>
+
+                    &lt;div class="col-66"&gt;<br>
+                    &lt;form class="form-payment"&gt;<br>
+                    &lt;div class="row"&gt;<br>
+                    &lt;div class="col-50"&gt;<br>
+                    &lt;h3>Billing Address&lt;/h3&gt;<br>
+
+                    &lt;label for="input-name">Full Name:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-name" id="input-name"&gt;<br>
+
+                    &lt;label for="input-email">Email:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-email" id="input-email"&gt;<br>
+
+                    &lt;label for="input-address">Address:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-address" id="input-address"&gt;<br>
+
+                    &lt;div class="row"&gt;<br>
+                    &lt;div class="col-50"&gt;<br>
+                    &lt;label for="input-city">City:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-city" id="input-city"&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="col-50"&gt;<br>
+                    &lt;label for="input-state">State/Province&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-state" id="input-state"&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="row"&gt;<br>
+                    &lt;div class="col-50"&gt;<br>
+                    &lt;label for="input-country">Country:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-country" id="input-country"&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="col-50"&gt;<br>
+                    &lt;label for="input-postal">Postal Code:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-postal" id="input-postal"&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="col-50"&gt;<br>
+                    &lt;h3>Credit Card Info&lt;/h3&gt;<br>
+
+                    &lt;label for="cc-type">Credit Card:&lt;/label&gt;<br>
+                    &lt;select name="cc-type" id="cc-type"&gt;<br>
+                    &lt;option value="MC">Mastercard&lt;/option&gt;<br>
+                    &lt;option value="V">Visa&lt;/option&gt;<br>
+                    &lt;option value="AMEX">American Express&lt;/option&gt;<br>
+                    &lt;option value="O">Other&lt;/option&gt;<br>
+                    &lt;/select&gt;<br>
+
+                    &lt;label for="input-ccName">Card Holder's Name:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-ccName" id="input-ccName"&gt;<br>
+
+                    &lt;label for="input-cc">Credit Card Number:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-cc" id="input-cc"&gt;<br>
+
+                    &lt;label for="input-ccExp">Expiration Date:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-ccExp" id="input-ccExp"&gt;<br>
+
+                    &lt;label for="input-cvv">CVV:&lt;/label&gt;<br>
+                    &lt;input type="text" name="input-cvv" id="input-cvv"&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;input class="nav-button form-button" type="submit" value="Submit"&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/form&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
-                        <div class="row checkout">
-            <div class="col-33 popRight">
-                <table class="cart">
-                    <tr>
-                        <th class="cartHeading">Item</th>
-                        <th class="cartHeading">Quantity</th>
-                        <th class="cartHeading">Price</th>
-                    </tr>
+                <div class="row checkout">
+                    <div class="col-33 popRight">
+                        <table class="cart">
+                            <tr>
+                                <th class="cartHeading">Item</th>
+                                <th class="cartHeading">Quantity</th>
+                                <th class="cartHeading">Price</th>
+                            </tr>
 
-                    <tr>
-                        <td class="cartItem"><a href="#">Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA 6.0Gb/s 3.5" Hard Drive Bare Drive - OEM</a></td>
-                        <td class="cartQuantity">1</td>
-                        <td class="cartPrice">$49.99</td>
-                    </tr>
+                            <tr>
+                                <td class="cartItem"><a href="#">Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA 6.0Gb/s 3.5" Hard Drive Bare Drive - OEM</a></td>
+                                <td class="cartQuantity">1</td>
+                                <td class="cartPrice">$49.99</td>
+                            </tr>
 
-                    <tr>
-                        <td class="cartItem"><a href="#">Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window</a></td>
-                        <td class="cartQuantity">1</td>
-                        <td class="cartPrice">$19.99</td>
-                    </tr>
+                            <tr>
+                                <td class="cartItem"><a href="#">Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window</a></td>
+                                <td class="cartQuantity">1</td>
+                                <td class="cartPrice">$19.99</td>
+                            </tr>
 
-                    <tr>
-                        <td class="cartTotal">Total</td>
-                        <td class="cartQuantity">2</td>
-                        <td class="cartPrice">$99.98</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="col-66">
-                <form class="form-payment">
-                    <div class="row">
-                        <div class="col-50">
-                            <h3>Billing Address</h3>
-
-                            <label for="input-name">Full Name:</label>
-                            <input type="text" name="input-name" id="input-name">
-
-                            <label for="input-email">Email:</label>
-                            <input type="text" name="input-email" id="input-email">
-
-                            <label for="input-address">Address:</label>
-                            <input type="text" name="input-address" id="input-address">
-
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="input-city">City:</label>
-                                    <input type="text" name="input-city" id="input-city">
-                                </div>
-
-                                <div class="col-50">
-                                    <label for="input-state">State/Province</label>
-                                    <input type="text" name="input-state" id="input-state">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="input-country">Country:</label>
-                                    <input type="text" name="input-country" id="input-country">
-                                </div>
-
-                                <div class="col-50">
-                                    <label for="input-postal">Postal Code:</label>
-                                    <input type="text" name="input-postal" id="input-postal">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-50">
-                            <h3>Credit Card Info</h3>
-
-                            <label for="cc-type">Credit Card:</label>
-                            <select name="cc-type" id="cc-type">
-                                <option value="MC">Mastercard</option>
-                                <option value="V">Visa</option>
-                                <option value="AMEX">American Express</option>
-                                <option value="O">Other</option>
-                            </select>
-
-                            <label for="input-ccName">Card Holder's Name:</label>
-                            <input type="text" name="input-ccName" id="input-ccName">
-
-                            <label for="input-cc">Credit Card Number:</label>
-                            <input type="text" name="input-cc" id="input-cc">
-
-                            <label for="input-ccExp">Expiration Date:</label>
-                            <input type="text" name="input-ccExp" id="input-ccExp">
-
-                            <label for="input-cvv">CVV:</label>
-                            <input type="text" name="input-cvv" id="input-cvv">
-                        </div>
-
-                        <input class="nav-button form-button" type="submit" value="Submit">
+                            <tr>
+                                <td class="cartTotal">Total</td>
+                                <td class="cartQuantity">2</td>
+                                <td class="cartPrice">$99.98</td>
+                            </tr>
+                        </table>
                     </div>
-                </form>
-            </div>
-        </div>
+
+                    <div class="col-66">
+                        <form class="form-payment">
+                            <div class="row">
+                                <div class="col-50">
+                                    <h3>Billing Address</h3>
+
+                                    <label for="input-name">Full Name:</label>
+                                    <input type="text" name="input-name" id="input-name">
+
+                                    <label for="input-email">Email:</label>
+                                    <input type="text" name="input-email" id="input-email">
+
+                                    <label for="input-address">Address:</label>
+                                    <input type="text" name="input-address" id="input-address">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="input-city">City:</label>
+                                            <input type="text" name="input-city" id="input-city">
+                                        </div>
+
+                                        <div class="col-50">
+                                            <label for="input-state">State/Province</label>
+                                            <input type="text" name="input-state" id="input-state">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="input-country">Country:</label>
+                                            <input type="text" name="input-country" id="input-country">
+                                        </div>
+
+                                        <div class="col-50">
+                                            <label for="input-postal">Postal Code:</label>
+                                            <input type="text" name="input-postal" id="input-postal">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-50">
+                                    <h3>Credit Card Info</h3>
+
+                                    <label for="cc-type">Credit Card:</label>
+                                    <select name="cc-type" id="cc-type">
+                                        <option value="MC">Mastercard</option>
+                                        <option value="V">Visa</option>
+                                        <option value="AMEX">American Express</option>
+                                        <option value="O">Other</option>
+                                    </select>
+
+                                    <label for="input-ccName">Card Holder's Name:</label>
+                                    <input type="text" name="input-ccName" id="input-ccName">
+
+                                    <label for="input-cc">Credit Card Number:</label>
+                                    <input type="text" name="input-cc" id="input-cc">
+
+                                    <label for="input-ccExp">Expiration Date:</label>
+                                    <input type="text" name="input-ccExp" id="input-ccExp">
+
+                                    <label for="input-cvv">CVV:</label>
+                                    <input type="text" name="input-cvv" id="input-cvv">
+                                </div>
+
+                                <input class="nav-button form-button" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
 
-        <!-- // COMBINED ELEMENTS SECTION -->
+            <!-- // COMBINED ELEMENTS SECTION -->
 
-        <section id="branding">
-            <h2>Branding Ideas - Newegg Canada</h2>
+            <section id="branding">
+                <h2>Branding Ideas - Newegg Canada</h2>
 
-            <h3>What does the company do?</h3>
-            <p>
-                Newegg is a tech-focused e-retailer based in North America. Newegg provides customers with a comprehensive catalog of the latest consumer electronics, entertainment, smart home and gaming products. As well, Newegg regularly provides customers with deals and promotions on a variety of products.
-            </p>
+                <h3>What does the company do?</h3>
+                <p>
+                    Newegg is a tech-focused e-retailer based in North America. Newegg provides customers with a comprehensive catalog of the latest consumer electronics, entertainment, smart home and gaming products. As well, Newegg regularly provides customers with deals and promotions on a variety of products.
+                </p>
 
-            <h3>Who is the company to potential customers?</h3>
-            <p>
-                Newegg is North America's leading tech-focused e-retailer and is ranked as one of the best online shopping destinations consistently. Newegg is similar to online retailers such as Amazon and eBay, but with a focus on tech related products. Unlike Amazon, eBay, and most other online retailers, Newegg regularly provides customers with 3 daily super deals, daily deals, deals on featured products, monitor deals, and email subscriber only deals. Therefore, customers will always be able to find new deals on Newegg whenever they visit their website.
-            </p>
+                <h3>Who is the company to potential customers?</h3>
+                <p>
+                    Newegg is North America's leading tech-focused e-retailer and is ranked as one of the best online shopping destinations consistently. Newegg is similar to online retailers such as Amazon and eBay, but with a focus on tech related products. Unlike Amazon, eBay, and most other online retailers, Newegg regularly provides customers with 3 daily super deals, daily deals, deals on featured products, monitor deals, and email subscriber only deals. Therefore, customers will always be able to find new deals on Newegg whenever they visit their website.
+                </p>
 
-            <h3>Why might this company entice someone to purchase a product?</h3>
-            <p>
-                Newegg strives to offer competitive pricing on its unmatched product catalog, while firmly committing to on-time order fulfillment. Newegg allows customers to make the best purchasing decisions by providing detailed product information, product tutorials, customer reviews, expert opinions, and the ability to network with the Newegg community's other members. As well, Newegg puts customer satisfaction as thir top priority, which is achieved through their superior service and there customer first philosophy. Therefore, customers not only get great deals and detailed product info and reviews, but also high quality customer support.
-            </p>
+                <h3>Why might this company entice someone to purchase a product?</h3>
+                <p>
+                    Newegg strives to offer competitive pricing on its unmatched product catalog, while firmly committing to on-time order fulfillment. Newegg allows customers to make the best purchasing decisions by providing detailed product information, product tutorials, customer reviews, expert opinions, and the ability to network with the Newegg community's other members. As well, Newegg puts customer satisfaction as thir top priority, which is achieved through their superior service and there customer first philosophy. Therefore, customers not only get great deals and detailed product info and reviews, but also high quality customer support.
+                </p>
 
-            <h3>Where did this idea come from?</h3>
-            <p>
-                With the rise in the price of electronics, computers, and computer parts, it has become increasingly more expensive for the average consumer to buy products that perform well in today's standards. As well, online retailers and marketplaces are constantly competing with each other in order to provide reasonably priced tech and computer products, while still trying to make a profit. As one of the best tech-focused e-retailer in North America, Newegg has become an increasingly more popular destination for online tech shopping due to their competitive pricing and commitment to top priority customer satisfaction. As such, I feel that the current website (the Newegg Canada site) could be updated to provide users with a better online shopping experience.
-            </p>
-        </section>
+                <h3>Where did this idea come from?</h3>
+                <p>
+                    With the rise in the price of electronics, computers, and computer parts, it has become increasingly more expensive for the average consumer to buy products that perform well in today's standards. As well, online retailers and marketplaces are constantly competing with each other in order to provide reasonably priced tech and computer products, while still trying to make a profit. As one of the best tech-focused e-retailer in North America, Newegg has become an increasingly more popular destination for online tech shopping due to their competitive pricing and commitment to top priority customer satisfaction. As such, I feel that the current website (the Newegg Canada site) could be updated to provide users with a better online shopping experience.
+                </p>
+            </section>
 
-        <section id="identity">
-            <h2>Brand Identity</h2>
+            <section id="identity">
+                <h2>Brand Identity</h2>
 
-            <h3>Fonts</h3>
-            <p>To best suit the simplistic, minimalist feel, I want to use sans-serif fonts that are simple and easy to read. Also, I want to use a mixture of regular and thin font weights in order to create a hierarchy between the body and headings.</p>
-            <ul>
-                <li>
-                    <h2 class="sample-heading">Headings are styled using the font Lato</h2>
-                </li>
-                <li>
-                    <p>Body text is styled using the font Open Sans</p>
-                </li>
-            </ul>
+                <h3>Fonts</h3>
+                <p>To best suit the simplistic, minimalist feel, I want to use sans-serif fonts that are simple and easy to read. Also, I want to use a mixture of regular and thin font weights in order to create a hierarchy between the body and headings.</p>
+                <ul>
+                    <li>
+                        <h2 class="sample-heading">Headings are styled using the font Lato</h2>
+                    </li>
+                    <li>
+                        <p>Body text is styled using the font Open Sans</p>
+                    </li>
+                </ul>
 
-            <h3>Color Palette</h3>
-            <div class="colour1">
-                <p class="colour">rgb(25, 25, 112) || hex: #191970</p>
-            </div>
-
-            <div class="colour2">
-                <p class="colour">rgb(0, 121, 202) || hex: #0079CA</p>
-            </div>
-
-            <div class="colour3">
-                <p class='colour'>rgb(246, 246, 246) || hex: #F6F6F6</p>
-            </div>
-
-
-            <h3>Art Direction</h3>
-            <p>Similar to other other retailers and market places, I want the site to have a minimalist feel, focusing on the products themselves </p>
-            <div class="images">
-                <img src="img/gaming-chair.jpg" class="banner" alt="Gamming Chair Banner">
-
-                <div class="product-image">
-                    <img src="img/Rosewill_FBM-X1.jpg" alt="Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window">
+                <h3>Color Palette</h3>
+                <div class="colour1">
+                    <p class="colour">rgb(25, 25, 112) || hex: #191970</p>
                 </div>
 
-                <div class="product-image">
-                    <img src="img/BarraCuda.jpg" alt="Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA">
+                <div class="colour2">
+                    <p class="colour">rgb(0, 121, 202) || hex: #0079CA</p>
                 </div>
-            </div>
-        </section>
 
-        <section id="citations">
-            <h2>Citations</h2>
+                <div class="colour3">
+                    <p class='colour'>rgb(246, 246, 246) || hex: #F6F6F6</p>
+                </div>
 
-            <ul>
-                <li>Lato font. Retrieved from <a href="https://fonts.google.com/specimen/Lato">https://fonts.google.com/specimen/Lato</a></li>
-                <li>Open Sans font. Retrieved from <a href="https://fonts.google.com/specimen/Open+Sans">https://fonts.google.com/specimen/Open+Sans</a></li>
-                <li>Newegg Canada logo. Retrieved from <a href="https://pbs.twimg.com/profile_images/522059748565192704/dKdfmnBP.jpeg">https://pbs.twimg.com/profile_images/522059748565192704/dKdfmnBP.jpeg</a>.</li>
-                <li>Product images and banner retrieved from <a href="https://www.newegg.ca/">https://www.newegg.ca/</a>.</li>
-                <li><a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">Drop Down Nav Menu</a></li>
-            </ul>
 
-        </section>
+                <h3>Art Direction</h3>
+                <p>Similar to other other retailers and market places, I want the site to have a minimalist feel, focusing on the products themselves </p>
+                <div class="images">
+                    <img src="img/gaming-chair.jpg" class="banner" alt="Gamming Chair Banner">
+
+                    <div class="product-image">
+                        <img src="img/Rosewill_FBM-X1.jpg" alt="Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window">
+                    </div>
+
+                    <div class="product-image">
+                        <img src="img/BarraCuda.jpg" alt="Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA">
+                    </div>
+                </div>
+            </section>
+
+            <section id="citations">
+                <h2>Citations</h2>
+
+                <ul>
+                    <li>Lato font. Retrieved from <a href="https://fonts.google.com/specimen/Lato">https://fonts.google.com/specimen/Lato</a></li>
+                    <li>Open Sans font. Retrieved from <a href="https://fonts.google.com/specimen/Open+Sans">https://fonts.google.com/specimen/Open+Sans</a></li>
+                    <li>Newegg Canada logo. Retrieved from <a href="https://pbs.twimg.com/profile_images/522059748565192704/dKdfmnBP.jpeg">https://pbs.twimg.com/profile_images/522059748565192704/dKdfmnBP.jpeg</a>.</li>
+                    <li>Product images and banner retrieved from <a href="https://www.newegg.ca/">https://www.newegg.ca/</a>.</li>
+                    <li><a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">Drop Down Nav Menu</a></li>
+                </ul>
+
+            </section>
 
     </body>
 </html>

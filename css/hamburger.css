@@ -27,6 +27,14 @@ more easily organize the style for it*/
     z-index: 2;
 }
 
+.toggle.style-guide{
+    position: relative;
+    right: 0;
+    top: 0;
+    float: right;
+    margin: 0;
+}
+
 .toggle:hover{
     opacity: 0.8;
 }
@@ -67,7 +75,7 @@ more easily organize the style for it*/
 }
 
 @media screen and (max-width: 40rem){
-    .nav{
+    .main-nav{
         display: block;
         float: none;
         max-height: 0;

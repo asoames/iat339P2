@@ -11,16 +11,13 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
     padding: 2rem;
+    text-align: center;
 }
 
-.nav {
-    display: flex;
-    align-items: flex-end;
-}
-
-.nav.style-guide {
-    align-items: center;
+body * {
+    text-align: left;
 }
 
 .element {
@@ -50,6 +47,8 @@ h4 {
 p {
     margin-top: 0;
     font-size: 0.875rem;
+    max-width: 1200px;
+    display: inline-block;
 }
 
 a{
@@ -128,13 +127,16 @@ transition code from http://ianlunn.github.io/Hover/
     flex-grow: 1;
     flex-flow: row wrap;
     align-items: stretch;
+    justify-content: center;
     text-align: center;
     padding-bottom: 0.3rem;
-    width: 50%
+    max-width: 1200px;
+    margin: auto;
 }
 
 .main-nav a {
     display: flex;
+    flex-grow: 1;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -143,6 +145,8 @@ transition code from http://ianlunn.github.io/Hover/
 .product-list {
     display: flex;
     flex-flow: row wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .product {
@@ -169,8 +173,8 @@ transition code from http://ianlunn.github.io/Hover/
     object-fit: contain;
 }
 
-.product-name:hover, .product-image:hover {
-    opacity: 0.75;
+.product a:hover, .product a:focus{
+    opacity: 0.50;
     transition-property: opacity;
     transition-duration: 0.5s;
 }
@@ -319,14 +323,16 @@ transition code from http://ianlunn.github.io/Hover/
     flex-basis: 50.5%;
 }
 
-.submit-button:hover, .submit-button:focus {
-    opacity: 0.75;
+#events-banner {
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 0.25rem;
+    background-color: #191970;
+    color: white;
+    text-align: center;
 }
 
-#events-banner {
-    padding: 1rem;
-    background-color: #0089ca91; /*change colour*/
-    color: white;
+#events-banner h3 {
     text-align: center;
 }
 
@@ -339,7 +345,14 @@ a.events-banner{
 }
 
 img.about{
-    max-width: 98%;
+    max-width: 1200px;
+    max-height: 250px;
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    margin: 1rem auto;
 }
 
 ul.contact-info{
@@ -374,14 +387,6 @@ ul.contact-info{
     .logo {
         display: block;
         margin: auto;
-    }
-
-    .main-nav {
-        width: 100%;
-    }
-
-    .main-nav * {
-        flex-basis: 100%;
     }
 }
 
