@@ -429,73 +429,104 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;form class="form-payment"&gt;<br>
-                    &lt;div class="form-row"&gt;<br>
-                    &lt;div class="form-50 left"&gt;<br>
-                    &lt;h3&gt;Billing Address&lt;/h3&gt;<br><br>
+                    &lt;div class="row checkout"&gt;<br>
+                        &lt;div class="col-33 popRight"&gt;<br>
+                            &lt;table class="cart"&gt;<br>
+                                &lt;tr&gt;<br>
+                                    &lt;th class="cartHeading">Item&lt;/th&gt;<br>
+                                    &lt;th class="cartHeading">Quantity&lt;/th&gt;<br>
+                                    &lt;th class="cartHeading">Price&lt;/th&gt;<br>
+                                &lt;/tr&gt;<br>
 
-                    &lt;label for="input-name"&gt;Full Name:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-name" id="input-name"&gt;<br><br>
+                                &lt;tr&gt;<br>
+                                    &lt;td class="cartItem"&gt;&lt;a href="#">Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA 6.0Gb/s 3.5" Hard Drive Bare Drive - OEM&lt;/a&gt;&lt;/td&gt;<br>
+                                    &lt;td class="cartQuantity">1&lt;/td&gt;<br>
+                                    &lt;td class="cartPrice">$49.99&lt;/td&gt;<br>
+                                &lt;/tr&gt;<br>
 
-                    &lt;label for="input-email"&gt;Email:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-email" id="input-email"&gt;<br><br>
+                                &lt;tr&gt;<br>
+                                    &lt;td class="cartItem"&gt;&lt;a href="#">Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window&lt;/a&gt;&lt;/td&gt;<br>
+                                    &lt;td class="cartQuantity">1&lt;/td&gt;<br>
+                                    &lt;td class="cartPrice">$19.99&lt;/td&gt;<br>
+                                &lt;/tr&gt;<br>
 
-                    &lt;label for="input-address"&gt;Address:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-address" id="input-address"&gt;<br><br>
+                                &lt;tr&gt;<br>
+                                    &lt;td class="cartTotal">Total&lt;/td&gt;<br>
+                                    &lt;td class="cartQuantity">2&lt;/td&gt;<br>
+                                    &lt;td class="cartPrice">$99.98&lt;/td&gt;<br>
+                                &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                        &lt;/div&gt;<br>
 
-                    &lt;div class="form-row inner"&gt;<br>
-                    &lt;div class="form-50 left"&gt;<br>
-                    &lt;label for="input-city"&gt;City:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-city" id="input-city"&gt;<br>
-                    &lt;/div&gt;<br><br>
+                        &lt;div class="col-66"&gt;<br>
+                            &lt;form class="form-payment"&gt;<br>
+                                &lt;div class="row"&gt;<br>
+                                    &lt;div class="col-50"&gt;<br>
+                                        &lt;h3>Billing Address&lt;/h3&gt;<br>
 
-                    &lt;div class="form-50 right"&gt;<br>
-                    &lt;label for="input-state"&gt;State/Province&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-state" id="input-state"&gt;<br>
+                                        &lt;label for="input-name">Full Name:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-name" id="input-name"&gt;<br>
+
+                                        &lt;label for="input-email">Email:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-email" id="input-email"&gt;<br>
+
+                                        &lt;label for="input-address">Address:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-address" id="input-address"&gt;<br>
+
+                                        &lt;div class="row"&gt;<br>
+                                            &lt;div class="col-50"&gt;<br>
+                                                &lt;label for="input-city">City:&lt;/label&gt;<br>
+                                                &lt;input type="text" name="input-city" id="input-city"&gt;<br>
+                                            &lt;/div&gt;<br>
+
+                                            &lt;div class="col-50"&gt;<br>
+                                                &lt;label for="input-state">State/Province&lt;/label&gt;<br>
+                                                &lt;input type="text" name="input-state" id="input-state"&gt;<br>
+                                            &lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+
+                                        &lt;div class="row"&gt;<br>
+                                            &lt;div class="col-50"&gt;<br>
+                                                &lt;label for="input-country">Country:&lt;/label&gt;<br>
+                                                &lt;input type="text" name="input-country" id="input-country"&gt;<br>
+                                            &lt;/div&gt;<br>
+
+                                            &lt;div class="col-50"&gt;<br>
+                                                &lt;label for="input-postal">Postal Code:&lt;/label&gt;<br>
+                                                &lt;input type="text" name="input-postal" id="input-postal"&gt;<br>
+                                            &lt;/div&gt;<br>
+                                        &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+
+                                    &lt;div class="col-50"&gt;<br>
+                                        &lt;h3>Credit Card Info&lt;/h3&gt;<br>
+
+                                        &lt;label for="cc-type">Credit Card:&lt;/label&gt;<br>
+                                        &lt;select name="cc-type" id="cc-type"&gt;<br>
+                                            &lt;option value="MC">Mastercard&lt;/option&gt;<br>
+                                            &lt;option value="V">Visa&lt;/option&gt;<br>
+                                            &lt;option value="AMEX">American Express&lt;/option&gt;<br>
+                                            &lt;option value="O">Other&lt;/option&gt;<br>
+                                        &lt;/select&gt;<br>
+
+                                        &lt;label for="input-ccName">Card Holder's Name:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-ccName" id="input-ccName"&gt;<br>
+
+                                        &lt;label for="input-cc">Credit Card Number:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-cc" id="input-cc"&gt;<br>
+
+                                        &lt;label for="input-ccExp">Expiration Date:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-ccExp" id="input-ccExp"&gt;<br>
+
+                                        &lt;label for="input-cvv">CVV:&lt;/label&gt;<br>
+                                        &lt;input type="text" name="input-cvv" id="input-cvv"&gt;<br>
+                                    &lt;/div&gt;<br>
+
+                                    &lt;input class="nav-button form-button" type="submit" value="Submit"&gt;<br>
+                                &lt;/div&gt;<br>
+                            &lt;/form&gt;<br>
+                        &lt;/div&gt;<br>
                     &lt;/div&gt;<br>
-                    &lt;/div&gt;<br><br>
-
-                    &lt;div class="form-row inner"&gt;<br>
-                    &lt;div class="form-50 left"&gt;<br>
-                    &lt;label for="input-country"&gt;Country:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-country" id="input-country"&gt;<br>
-                    &lt;/div&gt;<br><br>
-
-                    &lt;div class="form-50 right"&gt;<br>
-                    &lt;label for="input-postal"&gt;Postal Code:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-postal" id="input-postal"&gt;<br>
-                    &lt;/div&gt;<br>
-                    &lt;/div&gt;<br>
-                    &lt;/div&gt;<br><br>
-
-                    &lt;div class="form-50 right"&gt;<br>
-                    &lt;h3&gt;Credit Card Info&lt;/h3&gt;<br><br>
-
-                    &lt;label for="cc-type"&gt;Credit Card:&lt;/label&gt;<br>
-                    &lt;select name="cc-type" id="cc-type"&gt;<br>
-                    &lt;option value="MC"&gt;Mastercard&lt;/option&gt;<br>
-                    &lt;option value="V"&gt;Visa&lt;/option&gt;<br>
-                    &lt;option value="AMEX"&gt;American Express&lt;/option&gt;<br>
-                    &lt;option value="O"&gt;Other&lt;/option&gt;<br>
-                    &lt;/select&gt;<br><br>
-
-                    &lt;label for="input-ccName"&gt;Card Holder's Name:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-ccName" id="input-ccName"&gt;<br><br>
-
-                    &lt;label for="input-cc"&gt;Credit Card Number:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-cc" id="input-cc"&gt;<br><br>
-
-                    &lt;label for="input-ccExp"&gt;Expiration Date:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-ccExp" id="input-ccExp"&gt;<br><br>
-
-                    &lt;label for="input-cvv"&gt;CVV:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-cvv" id="input-cvv"&gt;<br>
-                    &lt;/div&gt;<br><br>
-
-                    &lt;input class="nav-button form-button" type="submit" value="Submit"&gt;<br><br>
-
-                    &lt;/div&gt;<br>
-                    &lt;/form&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
