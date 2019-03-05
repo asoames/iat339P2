@@ -38,7 +38,7 @@
     width: 315px;
 }
 
-@media (max-width: 64rem){
+@media screen and (max-width: 64rem){
     .popRight{
         order: -1;
     }
@@ -48,7 +48,7 @@
     }
 }
 
-@media (max-width: 40rem) {
+@media screen and (max-width: 40rem) {
     .row {
         flex-direction: column;
         align-content: stretch;

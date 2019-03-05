@@ -10,23 +10,29 @@ more easily organize the style for it*/
     outline: none;
 }
 
-.ham-toggle{
+.nav-title{
+    margin: auto;
+    text-align: center;
+}
+
+.toggle{
+    display: none;
     user-select: none;
     cursor: pointer;
     height: 2rem;
-    left: 2rem;
-    position: fixed;
+    right: 2rem;
+    position: absolute;
     top: 2rem;
     width: 2.5rem;
     z-index: 2;
 }
 
-.ham-toggle:hover{
+.toggle:hover{
     opacity: 0.8;
 }
-.ham-toggle .ham-toggle-bar,
-.ham-toggle .ham-toggle-bar::after,
-.ham-toggle .ham-toggle-bar::before{
+.toggle .toggle-bar,
+.toggle .toggle-bar::after,
+.toggle .toggle-bar::before{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -36,118 +42,40 @@ more easily organize the style for it*/
     height: 0.4rem;
     width: 100%;
 }
-.ham-toggle .ham-toggle-bar{
+.toggle .toggle-bar{
     margin-top: 0;
 }
-.ham-toggle .ham-toggle-bar::after{
+.toggle .toggle-bar::after{
     margin-top: 0.8rem;
 
 }
-.ham-toggle .ham-toggle-bar::before{
+.toggle .toggle-bar::before{
     margin-top: -0.8rem;
 }
-.ham-toggle.expanded .ham-toggle-bar{
+.toggle.expanded .toggle-bar{
     background: transparent;
 }
-.ham-toggle.expanded .ham-toggle-bar::after, .ham-toggle.expanded .ham-toggle-bar::before{
+.toggle.expanded .toggle-bar::after, .toggle.expanded .toggle-bar::before{
     background: #191970;
     margin-top: 0;
 }
-.ham-toggle.expanded .ham-toggle-bar::after{
+.toggle.expanded .toggle-bar::after{
     transform: rotate(45deg);
 }
-.ham-toggle.expanded .ham-toggle-bar::before{
+.toggle.expanded .toggle-bar::before{
     transform: rotate(-45deg);
 }
 
-.nav-button.ham-button{
-    width: 100%;
-}
-
-.ham{
-    transition: left 0.5s ease;
-    background: #F6F6F6;
-    color: white;
-    cursor: pointer;
-    font-size: 2rem;
-    height: 100vh;
-    left: -20rem;
-    position: fixed;
-    top: 0;
-    width: 15rem;
-    z-index: 1;
-}
-.ham.expanded{
-    left: 0;
-}
-
-.ham ul{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    list-style: none;
-    margin: 0;
-    padding: 0 2rem;
-    width: 100%;
-}
-
-.ham a {
-    width: 100%;
-}
-
-.hamHeader{
-    margin: 0 2rem;
-}
-
-.ham-title{
-    text-align: center;
-}
-
-@media screen and (min-width: 40em){
-    .ham{
-        display: none;
-    }
-    .hamHeader{
-        display: none;
-
-    }
-    .ham-toggle{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 40em){
+@media screen and (max-width: 40rem){
     .nav{
-        display: none;
+        display: block;
+        float: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
     }
-    .nav-title{
-        display: none;
+
+    .toggle{
+        display: block;
     }
-}
-
-/*-----------------------------*/
-
-.collapsible {
-  background-color: #0079ca;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
 }

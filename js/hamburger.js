@@ -1,24 +1,42 @@
 // Source: https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-javascript/
+"use strict";
 
-(function(){
+"use strict";
+console.log("Script started");
 
-	var hamburger = {
-		hamToggle: document.querySelector('.ham-toggle'),
-		nav: document.querySelector('nav'),
+var nav = document.querySelector(".nav");
+nav.setAttribute('aria-hidden', 'true');
+nav.setAttribute('aria-labelledby', 'menu-toggle');
 
-		doToggle: function(e) {
-			e.preventDefault();
-			this.hamToggle.classList.toggle('expanded');
-			this.nav.classList.toggle('expanded');
-		}
-	};
+var toggle = document.querySelector(".toggle");
+toggle.setAttribute('aria-label', 'Menu');
+toggle.setAttribute('aria-controls', 'menu'); // Note this connects to an ID
+toggle.setAttribute('aria-expanded', 'false');
 
-	hamburger.hamToggle.addEventListener('click', function(e){ 
-		hamburger.doToggle(e); 
-	});
+toggle.addEventListener("click", function () {
+    console.log("Clicked");
+    if (toggle.classList.contains("expanded")) {
+        toggle.classList.remove("expanded");
 
-}());
+        nav.style.maxHeight = null;
+        nav.setAttribute('aria-hidden', 'true');
+        nav.setAttribute('aria-expanded', 'false');
+    } else {
+        toggle.classList.add("expanded");
 
+        nav.style.maxHeight = nav.scrollHeight + "px";
+        nav.setAttribute('aria-hidden', 'false');
+        nav.setAttribute('aria-expanded', 'true');
+    }
+});
 
+function resetNav(x) {
+    if (x.matches) {
+        toggle.classList.remove("expanded");
+        nav.style.maxHeight = null;
+    }
+}
 
-
+var breakpoint = window.matchMedia("(min-width: 40rem)");
+resetNav(breakpoint);
+breakpoint.addListener(resetNav);
