@@ -9,31 +9,39 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        <link href="css/hamburger.css" rel="stylesheet">
+
 
     </head>
 
     <body>
         <header>
-            <h1>Newegg Canada</h1>
-
-            <div class="nav">
-                <a href="#"><img src="img/newegg_ca.jpeg" id="logo" alt="Newegg Canada"></a>
-                <nav class="main-nav">
-                    <a href="#" class="nav-button">Home</a>
-                    <a href="#" class="nav-button">Products</a>
-                    <a href="#" class="nav-button">About</a>
-                    <a href="#" class="nav-button">My Cart</a>
-                </nav>
+            <div class="logo-frame">
+                <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
             </div>
-        </header>
 
-        <h2>All Products</h2>
+            <div class="toggle" id="menu-toggle">
+                <div class="toggle-bar"></div>
+            </div>
+
+            <nav class="main-nav" id="menu">
+                <a href="index.html" class='nav-button'>Home</a>
+                <a href="product_listing.html" class='nav-button'>Products</a>
+                <a href="checkout.html" class='nav-button'>Checkout</a>
+                <a href="about.html" class='nav-button'>About</a>
+                <a href="contact.html" class='nav-button'>Contact</a>
+            </nav>
+            <script src="js/hamburger.js"></script>
+
+            <h1 class="nav-title">All Products</h1>
+        </header>
 
         <div class="product-list">
 
             <div class="product">
 
-                <a href="#">
+                <a href=detailedProduct.html>
                     <div class="product-image">
                         <img src="img/Crucial_MX500.jpg" alt="Crucial MX500 2.5&Prime; 500GB SATA III 3D NAND Internal Solid State Drive (SSD) CT500MX500SSD1">
                     </div>
@@ -46,12 +54,11 @@
                 <div class="product-price">
                     <h5>$79.99</h5>
                 </div>
-
             </div>
 
             <div class="product">
 
-                <a href="#">
+                <a href=detailedProduct.html>
                     <div class="product-image">
                         <img src="img/AMD_RYZEN_5.jpg" alt="AMD RYZEN 5 2400G Quad-Core 3.6 GHz (3.9 GHz Turbo) Socket AM4 65W YD2400C5FBBOX Desktop Processor">
                     </div>
@@ -69,7 +76,7 @@
 
             <div class="product">
 
-                <a href="#">
+                <a href=detailedProduct.html>
                     <div class="product-image">
                         <img src="img/BarraCuda.jpg" alt="Seagate BarraCuda ST1000DM010 1TB 7200 RPM 64MB Cache SATA">
                     </div>
@@ -87,7 +94,7 @@
 
             <div class="product">
 
-                <a href="#">
+                <a href=detailedProduct.html>
                     <div class="product-image">
                         <img src="img/Rosewill_FBM-X1.jpg" alt="Rosewill FBM-X1 Black Steel / Plastic ATX Mini Tower Case with Side Panel Window">
                     </div>
@@ -105,7 +112,7 @@
 
             <div class="product">
 
-                <a href="#">
+                <a href=detailedProduct.html>
                     <div class="product-image">
                         <img src="img/ABS_TUF.jpg" alt="ABS TUF Gaming Desktop PC NVIDIA GeForce GTX 1080 8 GB Intel i7-8700 (3.20 GHz) 6-Core Liquid Cooling (120 mm) 16 GB DDR4 240 GB SSD 2 TB HDD Windows 10 Home 64-Bit ALI225w">
                     </div>
@@ -123,7 +130,7 @@
 
             <div class="product">
 
-                <a href="#">
+                <a href=detailedProduct.html>
                     <div class="product-image">
                         <img src="img/Rosewill_Dual-Fan.jpg" alt="Rosewill Dual-Fan ATX Mini Tower Computer Case - FBM-05">
                     </div>
@@ -138,6 +145,61 @@
                 </div>
 
             </div>
+
+            <div class="product">
+
+                <a href=detailedProduct.html>
+                    <div class="product-image">
+                        <img src="img/970_EVO.jpg" alt="SAMSUNG 970 EVO M.2 2280 500GB PCIe Gen3. X4, NVMe 1.3 64L V-NAND 3-bit MLC Internal Solid State Drive (SSD) MZ-V7E500BW">
+                    </div>
+
+                    <div class="product-name">
+                        <h4>SAMSUNG 970 EVO M.2 2280 500GB PCIe Gen3. X4, NVMe 1.3 64L V-NAND 3-bit MLC Internal Solid State Drive (SSD) MZ-V7E500BW</h4>
+                    </div>
+                </a>
+
+                <div class="product-price">
+                    <h5>$17.99</h5>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <a href=detailedProduct.html>
+                    <div class="product-image">
+                        <img src="img/RM1000X.jpg" alt="CORSAIR RMx Series RM1000X 1000W 80 PLUS GOLD Haswell Ready Full Modular ATX12V & EPS12V Power Supply SLI and Crossfire Ready">
+                    </div>
+
+                    <div class="product-name">
+                        <h4>CORSAIR RMx Series RM1000X 1000W 80 PLUS GOLD Haswell Ready Full Modular ATX12V & EPS12V Power Supply SLI and Crossfire Ready</h4>
+                    </div>
+                </a>
+
+                <div class="product-price">
+                    <h5>$17.99</h5>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <a href=detailedProduct.html>
+                    <div class="product-image">
+                        <img src="img/ROG_STRIX.jpg" alt="ASUS ROG STRIX B450-F GAMING AM4 AMD B450 SATA 6Gb/s USB 3.1 HDMI ATX AMD Motherboard">
+                    </div>
+
+                    <div class="product-name">
+                        <h4>ASUS ROG STRIX B450-F GAMING AM4 AMD B450 SATA 6Gb/s USB 3.1 HDMI ATX AMD Motherboard</h4>
+                    </div>
+                </a>
+
+                <div class="product-price">
+                    <h5>$17.99</h5>
+                </div>
+
+            </div>
+
         </div>
     </body>
 </html>

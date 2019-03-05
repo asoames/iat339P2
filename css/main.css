@@ -11,12 +11,13 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
     padding: 2rem;
+    text-align: center;
 }
 
-.nav {
-    display: flex;
-    align-items: flex-end;
+body * {
+    text-align: left;
 }
 
 .element {
@@ -46,6 +47,8 @@ h4 {
 p {
     margin-top: 0;
     font-size: 0.875rem;
+    max-width: 1200px;
+    display: inline-block;
 }
 
 a{
@@ -81,8 +84,9 @@ transition code from http://ianlunn.github.io/Hover/
 .nav-button {
     display: inline-block;
     padding: 0.5rem;
-    margin: 0.3rem;
+    margin: 0.3rem 0 0.3rem 0.6rem;
     color: white;
+    text-align: center;
     background-color: #0079ca;
     border-radius: 8px;
     text-decoration: none;
@@ -93,7 +97,7 @@ transition code from http://ianlunn.github.io/Hover/
     font-weight: bold;
 }
 
-.nav-button:hover, .nav-button:focus {
+.nav-button:hover, .nav-button:focus{
     opacity: 0.75;
 }
 
@@ -101,6 +105,11 @@ transition code from http://ianlunn.github.io/Hover/
     width: 15rem;
     height: 8rem;
     object-fit: cover
+}
+
+.logo-frame {
+    margin: auto;
+    text-align: center;
 }
 
 /*
@@ -116,28 +125,29 @@ transition code from http://ianlunn.github.io/Hover/
 
 .main-nav {
     display: flex;
+    flex-grow: 1;
     flex-flow: row wrap;
     align-items: stretch;
+    justify-content: center;
     text-align: center;
     padding-bottom: 0.3rem;
-    width: 50%
+    max-width: 1200px;
+    margin: auto;
 }
 
 .main-nav a {
     display: flex;
+    flex-grow: 1;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.main-nav.style-guide *{
-    flex-grow: 1;
-    flex-basis: 21%;
-}
-
 .product-list {
     display: flex;
     flex-flow: row wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .product {
@@ -164,8 +174,8 @@ transition code from http://ianlunn.github.io/Hover/
     object-fit: contain;
 }
 
-.product-name:hover, .product-image:hover {
-    opacity: 0.75;
+.product a:hover, .product a:focus{
+    opacity: 0.50;
     transition-property: opacity;
     transition-duration: 0.5s;
 }
@@ -174,9 +184,51 @@ transition code from http://ianlunn.github.io/Hover/
     margin-top: auto;
 }
 
+.product-details {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.product-image.detail {
+    margin-top: 2rem;
+    flex-basis: 40%
+}
+
+.product-image.detail img{
+    width: auto;
+}
+
+.info {
+    flex-basis: 60%
+}
+
+.info h2 {
+    margin-top: 2rem
+}
+
+.nav-button.product-info {
+    margin: 0 1rem;
+}
+
+.detail-price *{
+    display: inline-block
+}
+
 .form-payment {
-    background-color: #F6F6F6;
     padding: 0 1rem;
+}
+
+.form-payment .col-50 {
+    background-color: #F6F6F6;
+}
+
+.form-payment .row > .col-50 {
+    margin-bottom: 1rem;
 }
 
 .form-payment label[for^="input"], .form-payment label[for="cc-type"]{
@@ -196,6 +248,7 @@ transition code from http://ianlunn.github.io/Hover/
 
 .form-button {
     width: 100%;
+    margin: 0;
 }
 
 .cart {
@@ -221,6 +274,10 @@ transition code from http://ianlunn.github.io/Hover/
 
 .cart tr:nth-child(even){
     background-color: white;
+}
+
+.cartHeading {
+    text-align: center;
 }
 
 .cart a {
@@ -290,24 +347,78 @@ transition code from http://ianlunn.github.io/Hover/
     object-fit: cover;
 }
 
-@media (max-width: 47.5rem) {
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-box{
+    display: block;
+    resize: none;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+#feedback-button {
+    flex-basis: 50.5%;
+}
+
+#events-banner {
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 0.25rem;
+    background-color: #191970;
+    color: white;
+    text-align: center;
+}
+
+#events-banner h2 {
+    margin: 2rem 0;
+}
+
+p.events-banner {
+    margin-top: -1rem;
+    display: block;
+    text-align: center
+}
+
+a.events-banner{
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+a.events-banner:hover, a.events-banner:focus{
+    outline: 1px solid white;
+}
+
+img.about{
+    max-width: 1200px;
+    max-height: 250px;
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+ul.contact-info{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.center-title {
+    text-align: center;
+}
+
+@media screen and (max-width: 47.5rem) {
     .product {
-        flex-grow: 1;
         flex-basis: 46%;
     }
 }
 
-@media (max-width: 48.4375rem) {
-    .main-nav.style-guide *{
-        flex-basis: 29%;
-    }
-}
-
-@media (max-width: 40rem) {
-    .form-row {
-        flex-direction: column;
-    }
-
+@media screen and (max-width: 40rem) {
     .form-payment.left {
         padding: 0;
     }
@@ -318,13 +429,22 @@ transition code from http://ianlunn.github.io/Hover/
 
     .nav {
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .main-nav {
-        width: 100%;
+    .logo {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 32.8125rem) {
+    .product {
+        flex-grow: 0;
+        flex-basis: 75%;
     }
 
-    .main-nav *{
-        flex-basis: 100%;
+    .product-list {
+        justify-content: center;
     }
 }

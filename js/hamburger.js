@@ -1,20 +1,64 @@
 // Source: https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-javascript/
+"use strict";
+console.log("Script started");
 
-(function(){
+var nav = document.querySelector(".main-nav:not(.style-guide)");
+nav.setAttribute('aria-hidden', 'true');
+nav.setAttribute('aria-labelledby', 'menu-toggle');
 
-	var hamburger = {
-		hamToggle: document.querySelector('.ham-toggle'),
-		nav: document.querySelector('nav'),
+var navButton = document.querySelectorAll(".main-nav:not(.style-guide) .nav-button");
+for (var i = 0; i < navButton.length; i++) {
+    navButton[i].setAttribute('tabindex', '-1');
+}
 
-		doToggle: function(e) {
-			e.preventDefault();
-			this.hamToggle.classList.toggle('expanded');
-			this.nav.classList.toggle('expanded');
-		}
-	};
+var toggle = document.querySelector(".toggle:not(.style-guide)");
+toggle.setAttribute('aria-label', 'Menu');
+toggle.setAttribute('aria-controls', 'menu'); // Note this connects to an ID
+toggle.setAttribute('aria-expanded', 'false');
 
-	hamburger.hamToggle.addEventListener('click', function(e){ 
-		hamburger.doToggle(e); 
-	});
+toggle.addEventListener("click", function () {
+    console.log("Clicked");
+    if (toggle.classList.contains("expanded")) {
+        toggle.classList.remove("expanded");
 
-}());
+        nav.style.maxHeight = null;
+        nav.setAttribute('aria-hidden', 'true');
+        nav.setAttribute('aria-expanded', 'false');
+
+        for (var i = 0; i < navButton.length; i++) {
+            navButton[i].setAttribute('tabindex', '-1');
+        }
+    } else {
+        toggle.classList.add("expanded");
+
+
+        nav.style.maxHeight = nav.scrollHeight + "px";
+        nav.setAttribute('aria-hidden', 'false');
+        nav.setAttribute('aria-expanded', 'true');
+
+        for (var i = 0; i < navButton.length; i++) {
+            navButton[i].setAttribute('tabindex', '0');
+        }
+    }
+});
+
+function resetNav(x) {
+    if (x.matches) {
+        toggle.classList.remove("expanded");
+        nav.style.maxHeight = null;
+        nav.setAttribute('aria-hidden', 'true');
+        nav.setAttribute('aria-expanded', 'false');
+
+        for (var i = 0; i < navButton.length; i++) {
+            navButton[i].setAttribute('tabindex', '-1');
+        }
+    } else {
+        for (var i = 0; i < navButton.length; i++) {
+            navButton[i].setAttribute('tabindex', '0');
+        }
+    }
+}
+
+var breakpoint = window.matchMedia("(max-width: 40rem)");
+resetNav(breakpoint);
+breakpoint.addListener(resetNav);

@@ -1,7 +1,7 @@
+<!--HTML Validated-->
+
 <!DOCTYPE html>
 <html lang="en">
-
-    <!-- TESTING -->
 
     <head>
 
@@ -18,30 +18,60 @@
 
     <body>
         <header>
-            <div class = "hamHeader">
-                <h1>P02 - Newegg Canada Style Guide</h1>
-                <a href="#"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+            <div class="logo-frame">
+                <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
             </div>
 
-            <div class="ham-toggle">
-                <div class="ham-toggle-bar"></div>
+            <div class="toggle" id="menu-toggle">
+                <div class="toggle-bar"></div>
             </div>
-            <nav class="ham">
-                <ul>
-                    <li><a href="#interactive_elements" class='nav-button'>Interactive Elements</a></li>
-                    <li><a href="#text_elements" class='nav-button'>Text Elements</a></li>
-                    <li><a href="#text_elements" class='nav-button'>Text Elements</a></li>
-                    <li><a href="product_listing.html" class='nav-button'>Product Listing Template</a></li>
-                    <li><a href="checkout.html" class='nav-button'>Checkout Template</a></li>
-                    <li><a href="#branding" class='nav-button'>Branding Ideas</a></li>
-                    <li><a href="contact.html" class='nav-button'>Contact Us</a></li>
-                    <li><a href="#citations" class='nav-button'>Citations</a></li>
-                </ul>
+
+            <nav class="main-nav" id="menu">
+                <a href="index.html" class='nav-button'>Home</a>
+                <a href="product_listing.html" class='nav-button'>Products</a>
+                <a href="checkout.html" class='nav-button'>Checkout</a>
+                <a href="about.html" class='nav-button'>About</a>
+                <a href="contact.html" class='nav-button'>Contact</a>
             </nav>
             <script src="js/hamburger.js"></script>
 
-            </div>
+            <!--            <h1 class="nav-title">Contact Us</h1>-->
         </header>
+
+        <section id="contectUs">
+            <h2>Contact Us</h2>
+            <ul class="contact-info">
+                <li class="contact-info">24/7 Support Number: 604-000-0000</li>
+                <li class="contact-info"><a href="https://help.newegg.ca">24/7 Support Chat</a></li>
+                <li class="contact-info">Email Support: <a href="mailto:help@companyName.com">help@companyName.com</a></li>
+                <li class="contact-info">Address: 12345 67 Ave.</li>
+                <li class="contact-info"><a href="https://twitter.com">Twitter</a></li>
+                <li class="contact-info"><a href="https://www.facebook.com">Facebook</a></li>
+            </ul>
+        </section>
+
+        <section id="feedback">
+            <form class="form-payment">
+                <div class="row left feedbackFlex">
+                    <div class="col-50" id="feedback-form">
+                        <h3>Feedback</h3>
+
+                        <label for="input-name">Full Name:</label>
+                        <input type="text" name="input-name" id="input-name">
+
+                        <label for="input-email">Email:</label>
+                        <input type="text" name="input-email" id="input-email">
+
+                        <label>Feedback:</label>
+                        <textarea rows="10" class="feedback-box"></textarea>
+                    </div>
+                    <input class="nav-button form-button" id="feedback-button" type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+
+
+
     </body>
-    
-</html>    
+
+</html>

@@ -10,28 +10,34 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/flexbox.css" rel="stylesheet">
+        <link href="css/hamburger.css" rel="stylesheet">
 
     </head>
 
     <body>
-
         <header>
-            <h1>Newegg Canada</h1>
-
-            <div class="nav">
-                <a href="#"><img src="img/newegg_ca.jpeg" id="logo" alt="Newegg Canada"></a>
-                <nav class="main-nav">
-                    <a href="#" class="nav-button">Home</a>
-                    <a href="#" class="nav-button">Products</a>
-                    <a href="#" class="nav-button">About</a>
-                    <a href="#" class="nav-button">My Cart</a>
-                </nav>
+            <div class="logo-frame">
+                <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
             </div>
+
+            <div class="toggle" id="menu-toggle">
+                <div class="toggle-bar"></div>
+            </div>
+
+            <nav class="main-nav" id="menu">
+                <a href="index.html" class='nav-button'>Home</a>
+                <a href="product_listing.html" class='nav-button'>Products</a>
+                <a href="checkout.html" class='nav-button'>Checkout</a>
+                <a href="about.html" class='nav-button'>About</a>
+                <a href="contact.html" class='nav-button'>Contact</a>
+            </nav>
+            <script src="js/hamburger.js"></script>
+
+            <h1 class="nav-title">Checkout</h1>
+
         </header>
 
-        <h2>Checkout</h2>
-
-        <div class="row">
+        <div class="row checkout">
             <div class="col-33 popRight">
                 <table class="cart">
                     <tr>
@@ -61,7 +67,7 @@
             </div>
 
             <div class="col-66">
-                <form class="form-payment">
+                <form class="form-payment" action="purchased.html">
                     <div class="row">
                         <div class="col-50">
                             <h3>Billing Address</h3>

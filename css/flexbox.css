@@ -2,10 +2,16 @@
 
 .row {
     display: flex;
+    flex-grow: 1;
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
     margin: 0 -1rem;
+}
+
+.row.checkout {
+    margin: auto;
+    max-width: 1200px;
 }
 
 .col-33 {
@@ -28,12 +34,34 @@
     order: 1;
 }
 
-@media (max-width: 64rem){
+.left {
+    justify-content: flex-start;
+}
+
+.feedbackFlex {
+    display: block;
+    width: 315px;
+}
+
+@media screen and (max-width: 64rem){
     .popRight{
         order: -1;
     }
 
+    .row.checkout {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 40rem) {
     .row {
         flex-direction: column;
+        align-content: stretch;
+    }
+
+    .feedbackFlex {
+        display: flex;
+        width: 100%;
+        margin: 0;
     }
 }
