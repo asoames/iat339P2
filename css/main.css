@@ -379,7 +379,13 @@ transition code from http://ianlunn.github.io/Hover/
 p.events-banner {
     margin-top: -1rem;
     display: block;
-    text-align: center
+    text-align: center;
+}
+
+div.events-banner{
+    margin-top: -1rem;
+    display: block;
+    text-align: center;
 }
 
 a.events-banner{
